@@ -1,0 +1,40 @@
+.bs-classify-popover {
+	min-width: 440px;
+}
+.bs-classify .bsc-save {
+	margin-left: 5px;
+}
+.bs-classify table {
+	min-height: 240px;
+}
+.bs-classify table,
+.bs-classify .alert,
+.bs-classify .btn-group-vertical {
+	margin-bottom: 5px;
+}
+.bs-classify input {
+	margin-bottom: 0;
+}
+.bs-classify .alert {
+	padding: 4px 6px;
+	margin-top: 5px;
+}
+.bs-classify .label {
+  display: block;
+  font-size: 1em;
+	white-space: normal;
+	padding: 0.4em;
+	margin-bottom: 5px;
+}
+.bs-classify .bsc-coldissem,
+.bs-classify .bsc-colrelto {
+	min-width: 90px;
+}
+.bs-classify .bsc-relto {
+  max-height: 211px;
+  overflow-y: auto;
+}
+.bs-classify .bsc-typemenu,
+.bs-classify .bsc-trigraphs {
+	margin-right: 5px;
+}
