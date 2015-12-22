@@ -14,17 +14,17 @@
  * Not a huge issue as the NF still remains in the in the markings behind the scenes but there is a disconnect with the interface
  */
 
-if (typeof jQuery === 'undefined') {
-  throw new Error('Bootstrap Classify requires jQuery');
-}
+// if (typeof jQuery === 'undefined') {
+//   throw new Error('Bootstrap Classify requires jQuery');
+// }
 
-if (typeof _ === 'undefined') {
-  throw new Error('Bootstrap Classify requires Underscore.js');
-}
+// if (typeof _ === 'undefined') {
+//   throw new Error('Bootstrap Classify requires Underscore.js');
+// }
 
-if (typeof ism === 'undefined') {
-  throw new Error('Bootstrap Classify requires ISM.js');
-}
+// if (typeof ism === 'undefined') {
+//   throw new Error('Bootstrap Classify requires ISM.js');
+// }
 
 
 (function ($, window, document, undefined) {
@@ -40,7 +40,8 @@ if (typeof ism === 'undefined') {
     this.ism = {};
     this.id = _.uniqueId('bsc');
     this.tpl = $.fn.classify.templates;
-    this.conf = $.extend(true, {}, window.ISMConfig);
+    // this.conf = $.extend(true, {}, window.ISMConfig);
+    this.conf = $.extend(true, {}, ISMConfig);
     _.extend(this.conf.classification, $.fn.classify.markings.classification);
     this.init();
   };

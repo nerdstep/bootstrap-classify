@@ -2,9 +2,9 @@
 
 /*!
  * ism.js | Information Security Marking JavaScript Library
- 
- 
- 
+
+
+
  */
 
 if (typeof _ === 'undefined') {
@@ -45,7 +45,8 @@ if (typeof ISMConfig === 'undefined') {
 
   ISM.VERSION = '0.2.0';
 
-  ISM.CONFIG = window.ISMConfig;
+  //ISM.CONFIG = window.ISMConfig;
+  ISM.CONFIG = ISMConfig;
 
   ISM.OPTIONS = {
     format: 'pm', //! options: <pm|bl>
