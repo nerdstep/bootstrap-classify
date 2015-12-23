@@ -8,8 +8,7 @@ window.ISMConfig = window.ISMConfig || {};
 
 (function ($) {
 
-  //window.ISMConfig = $.extend(true, {}, window.ISMConfig, {
-    window.ISMConfig = Object.assign(true, {}, window.ISMConfig, {
+  window.ISMConfig = $.extend(true, {}, window.ISMConfig, {
 
     defaults: {
       classification: ['U'],
@@ -61,6 +60,6 @@ window.ISMConfig = window.ISMConfig || {};
     tetragraphs: {}
 
   });
-  return window.ISMConfig;
-
 }(window.jQuery));
+
+
