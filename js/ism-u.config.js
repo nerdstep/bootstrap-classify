@@ -14,18 +14,45 @@ window.ISMConfig = window.ISMConfig || {};
     },
 
     lookup: {
-      FDR: [],
-      expandable: []
+        FDR: ['NF', 'REL', 'RELIDO'],
+        expandable: ['ACGU', 'FVEY']
     },
 
     classification: {
       U: {
         bl: 'UNCLASSIFIED',
         pm: 'U'
+      },
+      S: {
+        bl: 'SECRET',
+        pm: 'S'
+      },
+      TS: {
+        bl: 'TOP SECRET',
+        pm: 'TS'
+      },
+      C: {
+        bl: 'CONFIDENTIAL',
+        pm: 'C'
       }
     },
 
-    scicontrols: {},
+    scicontrols: {
+        SI: {
+            bl: 'SI',
+            pm: 'SI',
+            clsf: ['C', 'S', 'TS'],
+            yes: [],
+            no: []
+        },
+        TK: {
+            bl: 'TALENT KEYHOLE',
+            pm: 'TK',
+            clsf: ['S', 'TS'],
+            yes: [],
+            no: []
+        }
+    },
 
     disseminationcontrols: {
       FOUO: {
@@ -34,12 +61,41 @@ window.ISMConfig = window.ISMConfig || {};
         clsf: ['U'],
         yes: [],
         no: []
+      },
+      NF: {
+        bl: 'NOFORN',
+        pm: 'NF',
+        clsf: ['U', 'C', 'S', 'TS'],
+        yes: [],
+        no: ['REL', 'RELIDO', 'EYES']
+      },
+      REL: {
+        bl: 'RELTO',
+        pm: 'REL',
+        clsf: ['U', 'C', 'S', 'TS'],
+        yes: [],
+        no: ['NF']
+      },
+      RELIDO: {
+        bl: 'RELIDO',
+        pm: 'RELIDO',
+        clsf: ['U', 'C', 'S', 'TS'],
+        yes: [],
+        no: ['NF']
       }
     },
 
-    dissemPriority: ['FOUO'],
+    dissemPriority: ['NF', 'RELIDO', 'REL', 'FOUO'],
 
-    nonicmarkings: {},
+    nonicmarkings: {
+      ABCDE: {
+        bl: 'ABCDE',
+        pm: 'ABCDE',
+        clsf: ['U', 'C', 'S', 'TS'],
+        yes: [],
+        no: ['NF']
+      }
+    },
 
     types: {
       USONLY: {
@@ -53,9 +109,28 @@ window.ISMConfig = window.ISMConfig || {};
       }
     },
 
-    trigraphs: {},
+    trigraphs: {
+        USA: {
+            name: 'United States of America',
+            id: 'USA'
+        },
+        AUS: {
+            name: 'Australia',
+            id: 'AUS'
+        }
+    },
 
-    tetragraphs: {}
+    tetragraphs: {
+        FEYE: {
+            name: 'FOR EYES',
+            id: 'FEYE',
+            trigraphs: ['AUS']
+        },
+        NATO: {
+            name: 'North Atlantic Treaty Organiztion',
+            id: 'NATO'
+        }
+    }
 
   });
 
