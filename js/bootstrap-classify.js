@@ -1,8 +1,5 @@
 /*!
  * Bootstrap Classify 2 | JavaScript Classification Marking Tool
-
-
-
  */
 
 /*jslint browser: true, devel: true, nomen: true, unparam: true, white: true */
@@ -100,8 +97,6 @@ if (typeof ism === 'undefined') {
 	var data = _.pick(this.options, this.conf.keys);
 	this.ism = ism(data, { format: this.format });
       }
-
-      console.log(this);
 
       this.typeahead = {
 	mode: undefined,

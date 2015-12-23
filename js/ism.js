@@ -1,10 +1,5 @@
-
-
 /*!
  * ism.js | Information Security Marking JavaScript Library
- 
- 
- 
  */
 
 if (typeof _ === 'undefined') {
