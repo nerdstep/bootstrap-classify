@@ -38,3 +38,20 @@
 .bs-classify .bsc-trigraphs {
 	margin-right: 5px;
 }
+
+.unclass-green {
+   background-color: #009900 ;
+   color: #FFF;
+}
+.confidential-blue {
+   background-color: #0000FF ;
+   color: #FFF;
+}
+.secret-red{
+   background-color: #FF0000 ;
+   color: #FFF;
+}
+.topsecret-yellow {
+   background-color: #FFFF00 ;
+   color: #000;
+}
