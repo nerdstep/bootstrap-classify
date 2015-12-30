@@ -14,7 +14,7 @@ window.ISMConfig = window.ISMConfig || {};
     },
 
     lookup: {
-        FDR: ['NF', 'REL', 'RELIDO'],
+        FDR: ['NF', 'REL', 'RELIDO', 'NV'],
         expandable: ['ACGU', 'FVEY']
     },
 
