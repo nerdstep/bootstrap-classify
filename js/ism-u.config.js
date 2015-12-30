@@ -51,6 +51,34 @@ window.ISMConfig = window.ISMConfig || {};
             clsf: ['S', 'TS'],
             yes: [],
             no: []
+        },
+        SR: {
+            bl: 'SIERRA',
+            pm: 'SR',
+            clsf: ['C', 'S', 'TS'],
+            yes: [],
+            no: []
+        },
+        TN: {
+            bl: 'TANGO',
+            pm: 'TN',
+            clsf: ['S', 'TS'],
+            yes: [],
+            no: []
+        },
+        GF: {
+            bl: 'GOLF',
+            pm: 'TN',
+            clsf: ['S', 'TS'],
+            yes: [],
+            no: []
+        },
+        HT: {
+            bl: 'HOTEL',
+            pm: 'HT',
+            clsf: ['S', 'TS'],
+            yes: [],
+            no: []
         }
     },
 
@@ -82,6 +110,13 @@ window.ISMConfig = window.ISMConfig || {};
         clsf: ['U', 'C', 'S', 'TS'],
         yes: [],
         no: ['NF']
+      },
+      NV: {
+        bl: 'NOVEMBER',
+        pm: 'NV',
+        clsf: ['U', 'C', 'S', 'TS'],
+        yes: [],
+        no: ['REL', 'RELIDO', 'EYES']
       }
     },
 
